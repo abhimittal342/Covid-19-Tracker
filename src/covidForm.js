@@ -31,52 +31,52 @@ class MasterForm extends Component{
             Ques4:'',
               Ques5:'',
                 Ques6:'',
-    
+
     }
       this.handleChange = this.handleChange.bind(this);
       this._next = this._next.bind(this);
-    this._prev = this._prev.bind(this); 
+    this._prev = this._prev.bind(this);
 }
  get checkcovid(){
    const Ques2 =this.state.Ques2;
   const Ques3=this.state.Ques3;
   const Ques4=this.state.Ques4;
   const Ques5 =this.state.Ques5;
-  if (Ques2==1){
+  if (Ques2===1){
    if(Ques3>=1&&Ques3<=3)
      {
         if(Ques4>=1&&Ques4<=3)
-          return <span className="bg-danger text-danger">  risk </span> 
-        else 
+          return <span className="bg-danger text-danger">  risk </span>
+        else
         if(Ques5>=1&&Ques5<=4)
-          return <span className="bg-danger text-danger">  risk </span> 
+          return <span className="bg-danger text-danger">  risk </span>
         else  return  <span className="bg-success text-success"> no risk </span>
      }
      else if(Ques4>=1&&Ques4<=3){
 
      if(Ques5>=1&&Ques5<=4)
-      return <span className="bg-danger text-danger">  risk </span> 
+      return <span className="bg-danger text-danger">  risk </span>
  else  return  <span className="bg-success text-success"> no risk </span>
      }
 else return  <span className="bg-success text-success"> no risk </span>
 
   }
  else if(Ques3>=1&&Ques3<=3)
-  {   
+  {
 
      if(Ques4>=1&&Ques4<=3){
-      
+
       if(Ques5>=1&&Ques5<=4)
-       return <span className="bg-danger text-danger">  risk </span> 
-         
-       
-      else 
+       return <span className="bg-danger text-danger">  risk </span>
+
+
+      else
        return  <span className="bg-success text-success"> no risk </span>
-     
+
   }
  else  return  <span className="bg-success text-success"> no risk </span>
   }
- 
+
 else  return  <span className="bg-success text-success"> no risk </span>
 
 
@@ -86,42 +86,42 @@ get coviddisplay(){
   const Ques3=this.state.Ques3;
   const Ques4=this.state.Ques4;
   const Ques5 =this.state.Ques5;
-  if (Ques2==1){
+  if (Ques2===1){
    if(Ques3>=1&&Ques3<=3)
      {
         if(Ques4>=1&&Ques4<=3)
-          return <span>   </span> 
-        else 
+          return <span>   </span>
+        else
         if(Ques5>=1&&Ques5<=4)
-          return <span>   </span> 
+          return <span>   </span>
         else  return  <span> Incase Your Symptoms changes, </span>
      }
      else if(Ques4>=1&&Ques4<=3){
 
      if(Ques5>=1&&Ques5<=4)
-      return <span > </span> 
+      return <span > </span>
  else  return  <span > Incase Your Symptoms changes, </span>
      }
 else return  <span > Incase Your Symptoms changes, </span>
 
   }
  else if(Ques3>=1&&Ques3<=3)
-  {   
+  {
 
      if(Ques4>=1&&Ques4<=3){
-      
+
       if(Ques5>=1&&Ques5<=4)
-       return <span >   </span> 
-         
-       
-      else 
+       return <span >   </span>
+
+
+      else
        return  <span >Incase Your Symptoms changes,  </span>
-     
+
   }
   else return  <span > Incase Your Symptoms changes, </span>
- 
+
   }
- 
+
 else  return  <span > Incase Your Symptoms changes, </span>
 }
 
@@ -131,48 +131,48 @@ else  return  <span > Incase Your Symptoms changes, </span>
   const Ques3=this.state.Ques3;
   const Ques4=this.state.Ques4;
   const Ques5 =this.state.Ques5;
-  if (Ques2==1){
+  if (Ques2===1){
    if(Ques3>=1&&Ques3<=3)
      {
         if(Ques4>=1&&Ques4<=3)
-          return <span className="bg-danger text-danger">  खतरा </span> 
-        else 
+          return <span className="bg-danger text-danger">  खतरा </span>
+        else
         if(Ques5>=1&&Ques5<=4)
-          return <span className="bg-danger text-danger">  खतरा </span> 
-        else  return  <span className="bg-success text-success"> 
+          return <span className="bg-danger text-danger">  खतरा </span>
+        else  return  <span className="bg-success text-success">
 कोई खतरा नहीं </span>
      }
      else if(Ques4>=1&&Ques4<=3){
 
      if(Ques5>=1&&Ques5<=4)
-      return <span className="bg-danger text-danger"> 
-कोई खतरा नहीं</span> 
- else  return  <span className="bg-success text-success"> 
+      return <span className="bg-danger text-danger">
+कोई खतरा नहीं</span>
+ else  return  <span className="bg-success text-success">
 कोई खतरा नहीं </span>
      }
-else return  <span className="bg-success text-success"> 
+else return  <span className="bg-success text-success">
 कोई खतरा नहीं </span>
 
   }
  else if(Ques3>=1&&Ques3<=3)
-  {   
+  {
 
      if(Ques4>=1&&Ques4<=3){
-      
+
       if(Ques5>=1&&Ques5<=4)
-       return <span className="bg-danger text-danger">  खतरा</span> 
-         
-       
-      else 
-       return  <span className="bg-success text-success"> 
+       return <span className="bg-danger text-danger">  खतरा</span>
+
+
+      else
+       return  <span className="bg-success text-success">
 कोई खतरा नहीं </span>
-     
+
   }
- else  return  <span className="bg-success text-success"> 
+ else  return  <span className="bg-success text-success">
 कोई खतरा नहीं</span>
   }
- 
-else  return  <span className="bg-success text-success"> 
+
+else  return  <span className="bg-success text-success">
 कोई खतरा नहीं</span>
 
 
@@ -182,42 +182,42 @@ get coviddisplayhindi(){
   const Ques3=this.state.Ques3;
   const Ques4=this.state.Ques4;
   const Ques5 =this.state.Ques5;
-  if (Ques2==1){
+  if (Ques2===1){
    if(Ques3>=1&&Ques3<=3)
      {
         if(Ques4>=1&&Ques4<=3)
-          return <span>   </span> 
-        else 
+          return <span>   </span>
+        else
         if(Ques5>=1&&Ques5<=4)
-          return <span>   </span> 
+          return <span>   </span>
         else  return  <span> यदि आपके लक्षण बदलते हैं, </span>
      }
      else if(Ques4>=1&&Ques4<=3){
 
      if(Ques5>=1&&Ques5<=4)
-      return <span > </span> 
+      return <span > </span>
  else  return  <span > यदि आपके लक्षण बदलते हैं, </span>
      }
 else return  <span > यदि आपके लक्षण बदलते हैं, </span>
 
   }
  else if(Ques3>=1&&Ques3<=3)
-  {   
+  {
 
      if(Ques4>=1&&Ques4<=3){
-      
+
       if(Ques5>=1&&Ques5<=4)
-       return <span >   </span> 
-         
-       
-      else 
+       return <span >   </span>
+
+
+      else
        return  <span > यदि आपके लक्षण बदलते हैं,  </span>
-     
+
   }
   else return  <span >  यदि आपके लक्षण बदलते हैं, </span>
- 
+
   }
- 
+
 else  return  <span >  यदि आपके लक्षण बदलते हैं, </span>
 }
 
@@ -226,8 +226,8 @@ else  return  <span >  यदि आपके लक्षण बदलते �
 
     get BeginButton(){
    let currentStep=this.state.currentStep;
-   if(currentStep==1){
-    
+   if(currentStep===1){
+
    	return (<center><button
    		className="btn btn-primary btn-block"
    		type="button" onClick={this._next}>
@@ -235,7 +235,7 @@ else  return  <span >  यदि आपके लक्षण बदलते �
    	</button></center>)
 
    }
-   if(currentStep==3){
+   if(currentStep===3){
     const { FullName,MobileNo,Pincode,age,nationality,language} = this.state;
 const isEnabled = FullName.length > 0 && MobileNo.length > 0 &&Pincode.length>0&&age&&language.length>0&&nationality.length>0;
    	return (<center><button disabled={!isEnabled}
@@ -250,7 +250,7 @@ const isEnabled = FullName.length > 0 && MobileNo.length > 0 &&Pincode.length>0&
 }
    get AcceptButton(){
    let currentStep=this.state.currentStep;
-   if(currentStep==2){
+   if(currentStep===2){
 
    	return (<center><button
    		className="btn btn-info btn-block"
@@ -268,8 +268,8 @@ const isEnabled = FullName.length > 0 && MobileNo.length > 0 &&Pincode.length>0&
   // If the current step is not 1, then render the "previous" button
   if(currentStep>3&&currentStep<10){
     return (
-      <button 
-        className="btn btn-info float-left " 
+      <button
+        className="btn btn-info float-left "
         type="button" onClick={this._prev}>
       Previous
       </button>
@@ -281,31 +281,31 @@ const isEnabled = FullName.length > 0 && MobileNo.length > 0 &&Pincode.length>0&
 
 get nextButton(){
   let currentStep = this.state.currentStep;
-   
+
 
 
   if(currentStep>3&&currentStep<9){
     return (
-      <button 
-        className="btn btn-primary float-right" 
+      <button
+        className="btn btn-primary float-right"
         type="button" onClick={this._next}>
       Next
-      </button>        
+      </button>
     )
-  
+
   }
 }
   get CompleteButton(){
 
   let currentStep = this.state.currentStep;
   // If the current step is not 3, then render the "next" button
-  if(currentStep==9){
+  if(currentStep===9){
     return (
-      <button 
-        className="btn btn-warning float-right" 
+      <button
+        className="btn btn-warning float-right"
         type="submit" >
       Complete
-      </button>        
+      </button>
     )
   }
   // ...else render nothing
@@ -315,7 +315,7 @@ get nextButton(){
     const {name, value} = event.target
     this.setState({
       [name]: value
-    })    
+    })
   }
     _next() {
      console.log("sdd00");
@@ -326,7 +326,7 @@ get nextButton(){
       currentStep: currentStep
     })
   }
-    
+
   _prev() {
     let currentStep = this.state.currentStep
     // If the current step is 2 or 3, then subtract one on "previous" button click
@@ -335,7 +335,7 @@ get nextButton(){
       currentStep: currentStep
     })
   }
-  
+
   // Trigger an alert on form submission
   handleSubmit = (event) => {
 
@@ -344,9 +344,6 @@ get nextButton(){
      pat_name:this.state.FullName,
      pat_pincode:this.state.Pincode,
     pat_phone:this.state.MobileNo
-      
-
-
     }
     axios.post("https://bigobackend.herokuapp.com/covid19selfassessment",{
      pat_name:this.state.FullName,
@@ -360,7 +357,7 @@ get nextButton(){
          symptom5:this.state.Ques5,
          symptom6:this.state.Ques6
 
-      
+
 
 
     }
@@ -368,82 +365,82 @@ get nextButton(){
     response=>{
       console.log(response);
       console.log(this.state);
-      
+
     }).catch(error=>{
       console.log(error)
     })
     this._next();
-   
+
   }
-render() {    
+render() {
 return (
   <React.Fragment>
-    
+
     <div class="center"><form class="forms" onSubmit={this.handleSubmit} >
     <div class="container" >
-   
+
      <Start
-      currentStep={this.state.currentStep} 
-     
-     
+      currentStep={this.state.currentStep}
+
+
     />
-    <Disclaimer 
-      currentStep={this.state.currentStep} 
-     
-     
+    <Disclaimer
+      currentStep={this.state.currentStep}
+
+
     />
-    <Patientdet 
-      currentStep={this.state.currentStep} 
+    <Patientdet
+      currentStep={this.state.currentStep}
       handleChange={this.handleChange}
-     
+
       MobileNo={this.state.MobileNo}
        FullName={this.state.FullName}
         Pincode={this.state.Pincode}
         age={this.state.age}
     />
 
-    <Step1 
-      currentStep={this.state.currentStep} 
+    <Step1
+      currentStep={this.state.currentStep}
       handleChange={this.handleChange}
        Ques1={this.state.Ques1}
        language={this.state.language}
 
     />
-    <Step2 
-      currentStep={this.state.currentStep} 
+    <Step2
+      currentStep={this.state.currentStep}
       handleChange={this.handleChange}
       language={this.state.language}
     />
-    <Step3 
-      currentStep={this.state.currentStep} 
+    <Step3
+      currentStep={this.state.currentStep}
       handleChange={this.handleChange}
       language={this.state.language}
-    />   
-    <Step4 
-      currentStep={this.state.currentStep} 
+    />
+    <Step4
+      currentStep={this.state.currentStep}
       handleChange={this.handleChange}
       language={this.state.language}
-    /> 
-    <Step5 
-      currentStep={this.state.currentStep} 
+    />
+    <Step5
+      currentStep={this.state.currentStep}
       handleChange={this.handleChange}
       language={this.state.language}
-    /> 
-    <Step6 
-      currentStep={this.state.currentStep} 
+    />
+    <Step6
+      currentStep={this.state.currentStep}
       handleChange={this.handleChange}
      language={this.state.language}
-    />    
-     <Complete 
-      currentStep={this.state.currentStep} 
+    />
+     <Complete
+      currentStep={this.state.currentStep}
       checkcovid={this.checkcovid}
       coviddisplay={this.coviddisplay}
       checkcovidhindi={this.checkcovidhindi}
       coviddisplayhindi={this.coviddisplayhindi}
      language={this.state.language}
-     
-    /> 
-    
+
+    />
+
       {this.previousButton}
       <span>   </span>
       {this.nextButton}
@@ -453,7 +450,7 @@ return (
         {this.CompleteButton}
       </div>
   </form></div>
-  
+
   </React.Fragment>
 )
 }
